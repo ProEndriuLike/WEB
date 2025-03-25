@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Seções */
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Estilização dos Projetos === */
+#projetos {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contêiner para alinhar os projetos lado a lado */
+.container-projetos {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os projetos */
+    flex-wrap: wrap; /* Quebra para telas menores */
+    gap: 20px; /* Espaço entre as caixinhas */
+}
+
+/* Estilizando cada projeto */
+.projeto {
+    background: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 45%; /* Cada projeto ocupa 45% da largura */
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade: Ajustar no celular */
+@media (max-width: 600px) {
+    .projeto {
+        width: 100%; /* Em telas pequenas, os projetos ficam um abaixo do outro */
+    }
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
